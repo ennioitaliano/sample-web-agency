@@ -7,8 +7,8 @@
     box-sizing: border-box;
 }
 
-body {
-    padding: 70px 200px;
+body{
+    background-color: black;
     background-color: black;
     color: white;
     font-family: lexend deca, sans-serif;
@@ -24,6 +24,18 @@ h6 {
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
+}
+
+header {
+    background-color: #151515;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%;
 }
 
 nav {
@@ -56,6 +68,11 @@ nav {
     text-decoration: underline;
 }
 
+main {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
 h1 {
     font-size: 5rem;
     font-weight: 600;
@@ -66,7 +83,7 @@ h2 {
     font-size: 3.5rem;
     font-weight: 500;
     color: #fbd90c;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 h3 {
@@ -79,15 +96,14 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #opening {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
 }
 
 #openingtext {
@@ -127,7 +143,6 @@ button {
 button:hover {
     background-color: #fbd90c;
     color: black;
-    border-color: #fbd90c;
     border-width: 5px;
     max-width: fit-content;
     text-align: center;
@@ -136,32 +151,6 @@ button:hover {
 #logoimg {
     max-width: 600px;
 }
-
-/*#servicessection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex: 1 1 0px;
-}
-
-.singleservice {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    background-color: #151515;
-    border-radius: 45px;
-    padding: 50px;
-    text-align: center;
-    font-family: montserrat, sans-serif;
-    margin-left: 30px;
-    margin-right: 30px;
-    min-width: 0;
-    flex: 1;
-    height: 400px;
-}*/
 
 #servicessection {
     display: flex;
@@ -196,6 +185,8 @@ button:hover {
 #projectssection {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #projects img {
@@ -208,7 +199,8 @@ button:hover {
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    padding: 20px 60px;
+    padding-left: 30px;
+    padding-right: 30px;
     flex-wrap: wrap;
     flex: 1 1 0px;
 }
@@ -218,7 +210,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    margin: 40px;
     max-width: 400px;
 }
 
@@ -236,23 +228,6 @@ button:hover {
     padding-left: 25px;
     padding-right: 25px;
 }
-
-/*#socialsection {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.singlesocial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: 125px;
-    margin-right: 125px;
-}*/
 
 #socialsection {
     display: flex;
@@ -300,6 +275,13 @@ button:hover {
 
 .singlesocial h4:hover {
     text-decoration: underline;
+}
+
+footer{
+    width: 100%;
+    background-color: #151515;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 footer h6 {
