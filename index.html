@@ -29,12 +29,13 @@
                     <a class="navbarlink" href="#contacts">Contattaci</a>
                     <a class="navbarlink" href="#socials">Social</a>
                 </div>
+                
             </nav>
         </header>
 
         <main>
-            <section id="opening">
-                <div id="openingtext">
+            <section class="row" id="opening">
+                <div class="col-6 col-s-12" id="openingtext">
                     <h1>Siti web su misura</h1>
                     <p>
                         Sviluppo siti web su misura per le più svariate
@@ -42,67 +43,81 @@
                     </p>
                     <button>CALCOLA IL TUO PREVENTIVO</button>
                 </div>
-                <figure id="openingimg">
+                <figure class="col-6 col-s-6" id="openingimg">
                     <img src="./media/logo.png" id="logoimg" alt="logo eTuca" />
                 </figure>
             </section>
 
-            <section id="services">
+            <section class="row" id="services">
                 <h2>Servizi</h2>
                 <div id="servicessection">
-                    <div class="singleservice">
-                        <i class="fa fa-desktop"></i>
-                        <h3>Sviluppo siti web</h3>
+                    <div class="col-4 col-s-12">
+                        <div class="singleservice">
+                            <i class="fa fa-desktop"></i>
+                            <h3>Sviluppo siti web</h3>
+                        </div>
                     </div>
-                    <div class="singleservice">
-                        <i class="fa fa-globe"></i>
-                        <h3>Gestione social</h3>
+                    <div class="col-4 col-s-6">
+                        <div class="singleservice">
+                            <i class="fa fa-globe"></i>
+                            <h3>Gestione social</h3>
+                        </div>
                     </div>
-                    <div class="singleservice">
-                        <i class="fa fa-map"></i>
-                        <h3>Google My Business</h3>
+                    <div class="col-4 col-s-6">
+                        <div class="singleservice">
+                            <i class="fa fa-map"></i>
+                            <h3>Google My Business</h3>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="projects">
+            <section class="row" id="projects">
                 <h2>I nostri progetti</h2>
                 <div id="projectssection">
-                    <figure>
-                        <img
-                            src="./media/logo.png"
-                            class="singleproject"
-                            alt="progetto 1"
-                        />
-                    </figure>
-                    <figure>
-                        <img
-                            src="./media/logo.png"
-                            class="singleproject"
-                            alt="progetto 2"
-                        />
-                    </figure>
-                    <figure>
-                        <img
-                            src="./media/logo.png"
-                            class="singleproject"
-                            alt="progetto 3"
-                        />
-                    </figure>
-                    <figure>
-                        <img
-                            src="./media/logo.png"
-                            class="singleproject"
-                            alt="progetto 4"
-                        />
-                    </figure>
+                    <div class="col-3 col-s-6">
+                        <figure>
+                            <img
+                                src="./media/logo.png"
+                                class="singleproject"
+                                alt="progetto 1"
+                            />
+                        </figure>
+                    </div>
+                    <div class="col-3 col-s-6">
+                        <figure>
+                            <img
+                                src="./media/logo.png"
+                                class="singleproject"
+                                alt="progetto 2"
+                            />
+                        </figure>
+                    </div>
+                    <div class="col-3 col-s-6">
+                        <figure>
+                            <img
+                                src="./media/logo.png"
+                                class="singleproject"
+                                alt="progetto 3"
+                            />
+                        </figure>
+                    </div>
+                    <div class="col-3 col-s-6">
+                        <figure>
+                            <img
+                                src="./media/logo.png"
+                                class="singleproject"
+                                alt="progetto 4"
+                            />
+                        </figure>
+                    </div>
                 </div>
             </section>
 
-            <section id="team">
+            <section class="row" id="team">
                 <h2>Il team</h2>
                 <div id="teamsection">
-                    <div class="singlemember">
+                    <div class="col-4 col-s-6 singlemember">
                         <figure>
                             <img
                                 src="./media/ennioSmall.png"
@@ -117,7 +132,7 @@
                             ultrices gravida.
                         </p>
                     </div>
-                    <div class="singlemember">
+                    <div class="col-4 col-s-6 singlemember">
                         <figure>
                             <img
                                 src="./media/tuxSmall.png"
@@ -132,7 +147,7 @@
                             ultrices gravida.
                         </p>
                     </div>
-                    <div class="singlemember">
+                    <div class="col-4 col-s-6 singlemember">
                         <figure>
                             <img
                                 src="./media/micheleSmall.png"
@@ -155,10 +170,10 @@
                 <!--FORM-->
             </section>
 
-            <section id="socials">
+            <section class="row" id="socials">
                 <h2>Social</h2>
                 <div id="socialsection">
-                    <div class="singlesocial">
+                    <div class="col-4 col-s-6 singlesocial">
                         <a
                             href="https://instagram.com/etuca.dev"
                             target="_blank"
@@ -169,14 +184,14 @@
                             <h4>@etuca.dev</h4>
                         </a>
                     </div>
-                    <div class="singlesocial">
+                    <div id="mail" class="col-4 col-s-12 singlesocial">
                         <a href="mailto:etuca.dev@gmail.com">
                             <i class="fa fa-envelope"></i>
                             <h3>Email</h3>
                             <h4>etuca.dev@gmail.com</h4>
                         </a>
                     </div>
-                    <div class="singlesocial">
+                    <div class="col-4 col-s-6 singlesocial">
                         <a
                             href="https://www.google.com/maps/place/Padua,+Province+of+Padua/@45.4065587,11.8562261,13z/data=!3m1!4b1!4m5!3m4!1s0x477eda5841ab30cf:0xc18236edaa1a2e2c!8m2!3d45.4064349!4d11.8767611"
                             target="_blank"
