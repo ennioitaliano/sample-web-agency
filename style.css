@@ -14,6 +14,24 @@ body {
     font-family: lexend deca, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
@@ -24,22 +42,46 @@ body {
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+    .col-600-1 {
+        width: 8.33%;
+    }
+    .col-600-2 {
+        width: 16.66%;
+    }
+    .col-600-3 {
+        width: 25%;
+    }
+    .col-600-4 {
+        width: 33.33%;
+    }
+    .col-600-5 {
+        width: 41.66%;
+    }
+    .col-600-6 {
+        width: 50%;
+    }
+    .col-600-7 {
+        width: 58.33%;
+    }
+    .col-600-8 {
+        width: 66.66%;
+    }
+    .col-600-9 {
+        width: 75%;
+    }
+    .col-600-10 {
+        width: 83.33%;
+    }
+    .col-600-11 {
+        width: 91.66%;
+    }
+    .col-600-12 {
+        width: 100%;
+    }
 
     main {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     #mail {
@@ -60,64 +102,82 @@ body {
         display: none;
     }
 
-  }
+    #logonavimg {
+        margin: unset;
+    }
+
+    #logonavimg a {
+        display: flex;
+        margin: unset;
+    }
+
+    header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    .col-1 {
+    .col-768-1 {
         width: 8.33%;
     }
-    .col-2 {
+    .col-768-2 {
         width: 16.66%;
     }
-    .col-3 {
+    .col-768-3 {
         width: 25%;
     }
-    .col-4 {
+    .col-768-4 {
         width: 33.33%;
     }
-    .col-5 {
+    .col-768-5 {
         width: 41.66%;
     }
-    .col-6 {
+    .col-768-6 {
         width: 50%;
     }
-    .col-7 {
+    .col-768-7 {
         width: 58.33%;
     }
-    .col-8 {
+    .col-768-8 {
         width: 66.66%;
     }
-    .col-9 {
+    .col-768-9 {
         width: 75%;
     }
-    .col-10 {
+    .col-768-10 {
         width: 83.33%;
     }
-    .col-11 {
+    .col-768-11 {
         width: 91.66%;
     }
-    .col-12 {
+    .col-768-12 {
         width: 100%;
     }
-}
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+    #openingtext{
+        text-align: start;
+        align-items: flex-start;
+    }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
+    #opening {
+        align-items: stretch
+    }
+
+    #openingimg {
+        display: flex;
+    }
+
+    #logoopening {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    button{
+        padding: 10px 30px;
+    }
 }
 
 figure {
@@ -130,10 +190,6 @@ header {
     position: fixed;
     overflow: hidden;
     top: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 200px;
-    padding-right: 200px;
     width: 100%;
 }
 
@@ -165,6 +221,10 @@ nav {
 
 .navbarlink:hover {
     text-decoration: underline;
+}
+
+#logoimg {
+    width: 100px;
 }
 
 main {
@@ -223,10 +283,6 @@ section {
     text-shadow: 3px 3px #c67228;
 }
 
-#openingimg {
-    margin-right: 0px;
-}
-
 @keyframes buttonnormal {
     from {
         background-color: #fbd90c;
@@ -240,7 +296,7 @@ section {
 
 button {
     border-radius: 50px;
-    padding: 20px 60px;
+    /*padding: 20px 60px;*/
     font-size: 1.5rem;
     background-color: #ffffff00;
     color: #fbd90c;
@@ -266,10 +322,6 @@ button:hover {
     animation: buttonyellow 0.4s;
     background-color: #fbd90c;
     color: black;
-}
-
-#logoimg {
-    width: inherit;
 }
 
 #servicessection {
@@ -325,6 +377,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .singlemember img {
@@ -337,7 +390,6 @@ button:hover {
 }
 
 .singlemember p {
-    text-align: center;
     padding-left: 25px;
     padding-right: 25px;
 }
