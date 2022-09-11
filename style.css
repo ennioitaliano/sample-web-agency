@@ -65,7 +65,7 @@ p {
     font-size: 1.25rem;
 }
 
-figure {
+picture {
     display: flex;
     justify-content: center;
     margin: unset;
@@ -303,28 +303,34 @@ button:focus {
     color: #fbd90c;
     font-size: 1.75rem;
     font-weight: 250;
+    text-decoration: underline;
+    margin-bottom: 25px;
 }
 
 .singlesocial h3:hover,
 .singlesocial h3:focus {
     text-decoration: underline;
     outline: none;
+    font-weight: 400;
 }
 
-.singlesocial h4 {
+.singlesocial a{
     color: white;
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-.singlesocial h4:hover,
-.singlesocial h4:focus {
-    text-decoration: underline;
+.singlesocial a:visited,
+.singlesocial a:active {
+    color: white;
+}
+
+.singlesocial a:hover,
+.singlesocial a:focus {
     outline: none;
 }
 
-#mail h4 {
-    font-size: 1.5rem;
+#mail a {
 }
 
 footer {
@@ -338,10 +344,6 @@ footer {
     font-size: 1.5rem;
     text-align: center;
     color: #7d7d7d;
-}
-
-footer h6 {
-    margin: unset;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
