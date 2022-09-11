@@ -1,6 +1,6 @@
 # eTuca-remastered
 ## TO-DO
-- [ ] Better text sizings for responsiveness
+- [x] Better text sizings for responsiveness
 - [ ] Photos and copywriting
 - [ ] Accessibility
 - [ ] Carousels for services, projects and team (javascript)
