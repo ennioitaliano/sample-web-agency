@@ -104,7 +104,9 @@ nav {
 }
 
 #logoimg {
-    width: 100px;
+    width: 80px;
+    height: auto;
+    object-fit: contain;
 }
 
 main {
@@ -223,7 +225,8 @@ button:hover {
 }
 
 #projects img {
-    max-width: 250px;
+    max-width: 100%;
+    border-radius: 30px;
 }
 
 #teamsection {
@@ -313,16 +316,20 @@ button:hover {
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: #151515;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-footer h6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 1.5rem;
     text-align: center;
     color: #7d7d7d;
+}
+
+footer h6{
+    margin: unset;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -472,6 +479,12 @@ footer h6 {
 
     .singlemember p {
         font-size: 1rem;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 1.75rem;
     }
 }
 
