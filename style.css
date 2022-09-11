@@ -68,6 +68,7 @@ p {
 figure {
     display: flex;
     justify-content: center;
+    margin: unset;
 }
 
 header {
@@ -184,10 +185,12 @@ button {
     }
 }
 
-button:hover {
+button:hover,
+button:focus {
     animation: buttonyellow 0.4s;
     background-color: #fbd90c;
     color: black;
+    outline: none;
 }
 
 #servicessection {
@@ -253,6 +256,7 @@ button:hover {
 .singlemember img {
     border-radius: 100%;
     width: 150px;
+    margin: 20px;
 }
 
 .singlemember h3 {
@@ -281,6 +285,10 @@ button:hover {
     text-align: center;
 }
 
+.singlesocial a:focus {
+    outline: 1px solid orange;
+}
+
 .singlesocial .fa {
     color: #c67228;
     font-size: 3.5rem;
@@ -297,8 +305,10 @@ button:hover {
     font-weight: 250;
 }
 
-.singlesocial h3:hover {
+.singlesocial h3:hover,
+.singlesocial h3:focus {
     text-decoration: underline;
+    outline: none;
 }
 
 .singlesocial h4 {
@@ -307,8 +317,10 @@ button:hover {
     font-weight: 400;
 }
 
-.singlesocial h4:hover {
+.singlesocial h4:hover,
+.singlesocial h4:focus {
     text-decoration: underline;
+    outline: none;
 }
 
 #mail h4 {
@@ -328,7 +340,7 @@ footer {
     color: #7d7d7d;
 }
 
-footer h6{
+footer h6 {
     margin: unset;
 }
 
@@ -475,6 +487,7 @@ footer h6{
     #projects img {
         width: 100%;
         height: auto;
+        margin: 20px;
     }
 
     .singlemember p {
@@ -552,8 +565,10 @@ footer h6{
         padding-left: 60px;
     }
 
-    .navbarlink:hover {
+    .navbarlink:hover,
+    .navbarlink:focus {
         text-decoration: underline;
+        outline: none;
     }
 
     #logonavimg {
