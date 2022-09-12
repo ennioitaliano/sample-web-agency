@@ -81,6 +81,22 @@ header {
     padding-right: 35px;
 }
 
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    color: #e0a422;
+}
+
 nav {
     display: flex;
     font-size: 1.4rem;
@@ -185,12 +201,10 @@ button {
     }
 }
 
-button:hover,
-button:focus {
+button:hover {
     animation: buttonyellow 0.4s;
     background-color: #fbd90c;
     color: black;
-    outline: none;
 }
 
 #servicessection {
@@ -285,10 +299,6 @@ button:focus {
     text-align: center;
 }
 
-.singlesocial a:focus {
-    outline: 1px solid orange;
-}
-
 .singlesocial .fa {
     color: #c67228;
     font-size: 3.5rem;
@@ -307,14 +317,12 @@ button:focus {
     margin-bottom: 25px;
 }
 
-.singlesocial h3:hover,
-.singlesocial h3:focus {
+.singlesocial h3:hover {
     text-decoration: underline;
-    outline: none;
     font-weight: 400;
 }
 
-.singlesocial a{
+.singlesocial a {
     color: white;
     font-size: 1.5rem;
     font-weight: 400;
@@ -323,14 +331,6 @@ button:focus {
 .singlesocial a:visited,
 .singlesocial a:active {
     color: white;
-}
-
-.singlesocial a:hover,
-.singlesocial a:focus {
-    outline: none;
-}
-
-#mail a {
 }
 
 footer {
@@ -567,10 +567,8 @@ footer {
         padding-left: 60px;
     }
 
-    .navbarlink:hover,
-    .navbarlink:focus {
+    .navbarlink:hover {
         text-decoration: underline;
-        outline: none;
     }
 
     #logonavimg {
