@@ -149,7 +149,7 @@ section {
     justify-content: center;
     font-size: 1.5rem;
     font-family: montserrat, sans-serif;
-    line-height: 30px;
+    line-height: 1.5;
     align-items: center;
 }
 
@@ -222,10 +222,10 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 250px;
+    height: fit-content;
     border-radius: 50px;
     text-align: center;
-    padding: 20px;
+    padding: 60px 20px;
 }
 
 .singleservice .fa {
@@ -269,7 +269,7 @@ button:hover {
 
 .singlemember img {
     border-radius: 100%;
-    width: 150px;
+    width: 100%;
     margin: 20px;
 }
 
@@ -585,7 +585,7 @@ footer {
     }
 
     #openingtext {
-        line-height: 35px;
+        line-height: 1.75;
     }
 
     #openingtext p {
@@ -689,7 +689,7 @@ footer {
     }
 
     #openingtext {
-        line-height: 45px;
+        line-height: 2;
     }
 
     #openingtext p {
