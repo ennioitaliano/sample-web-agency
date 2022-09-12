@@ -2,7 +2,7 @@
 ## TO-DO
 - [x] Better text sizings for responsiveness
 - [x] Photos and copywriting
-- [ ] Accessibility
+- [x] Accessibility
 - [ ] Carousels for services, projects and team (javascript)
 - [ ] Services and projects clickable (javascript)
 - [ ] Contacts form
