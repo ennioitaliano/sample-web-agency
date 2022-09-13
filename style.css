@@ -41,23 +41,20 @@ h6 {
 }
 
 h1 {
-    /* font-size: 5rem; */
-    font-size: 3rem;
+    font-size: clamp(3rem, 3rem + 2vw, 5rem);
     font-weight: 600;
     color: #fbd90c;
 }
 
 h2 {
-    /* font-size: 3.5rem; */
-    font-size: 2rem;
+    font-size: clamp(2rem, 2rem + 1.5vw, 3rem);
     font-weight: 500;
     color: #fbd90c;
     margin-bottom: 3rem;
 }
 
 h3 {
-    /* font-size: 2rem; */
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.5rem + 1.5vw, 2rem);
     font-weight: 400;
 }
 
@@ -77,8 +74,8 @@ header {
     overflow: hidden;
     top: 0;
     width: 100%;
-    padding-left: 35px;
-    padding-right: 35px;
+    /*padding-left: 35px;
+    padding-right: 35px;*/
 }
 
 .skip {
@@ -102,6 +99,8 @@ nav {
     font-size: 1.4rem;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    margin: unset;
 }
 
 #logo {
@@ -112,12 +111,18 @@ nav {
 }
 
 .navbarlink {
-    display: none;
+    font-size: 1rem;
+
+    color: #e0a422;
+    text-decoration: none;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 #logonavimg {
     margin: unset;
     height: 100px;
+    display: none;
 }
 
 #logoimg {
@@ -242,7 +247,8 @@ button:hover {
 }
 
 #projects img {
-    max-width: 100%;
+    max-inline-size: 100%;
+    block-size: auto;
     border-radius: 30px;
 }
 
@@ -269,7 +275,8 @@ button:hover {
 
 .singlemember img {
     border-radius: 100%;
-    width: 100%;
+    max-inline-size: 100%;
+    block-size: auto;
     margin: 20px;
 }
 
@@ -311,7 +318,7 @@ button:hover {
 
 .singlesocial h3 {
     color: #fbd90c;
-    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 1.75rem + 1.25vw, 2rem);
     font-weight: 250;
     text-decoration: underline;
     margin-bottom: 25px;
@@ -487,7 +494,8 @@ footer {
     }
 
     #projects img {
-        width: 100%;
+        max-inline-size: 100%;
+        block-size: auto;
         height: auto;
         margin: 20px;
     }
@@ -542,29 +550,10 @@ footer {
         width: 100%;
     }
 
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.75rem;
-    }
-
     #navbarlinks {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .navbarlink {
-        display: flex;
-        color: #e0a422;
-        text-decoration: none;
-        padding-left: 60px;
     }
 
     .navbarlink:hover {
@@ -609,10 +598,6 @@ footer {
 
     .singlesocial .fa {
         font-size: 4rem;
-    }
-
-    .singlesocial h3 {
-        font-size: 2rem;
     }
 
     .singlesocial h4 {
@@ -665,18 +650,6 @@ footer {
     }
     .col-1200-12 {
         width: 100%;
-    }
-
-    h1 {
-        font-size: 5rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    h3 {
-        font-size: 2rem;
     }
 
     header {
