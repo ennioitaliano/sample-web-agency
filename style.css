@@ -110,6 +110,16 @@ nav {
     text-decoration: none;
 }
 
+#navbarlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarlink:hover {
+    text-decoration: underline;
+}
+
 .navbarlink {
     font-size: 1rem;
 
@@ -393,13 +403,32 @@ footer {
         width: 100%;
     }
 
+    header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #logonavimg {
+        margin: unset;
+    }
+
+    #logonavimg a {
+        display: flex;
+        margin: unset;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    .navbarlink {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     main {
         padding-left: 30px;
         padding-right: 30px;
-    }
-
-    #mail {
-        order: -1;
     }
 
     #openingtext {
@@ -412,22 +441,8 @@ footer {
         display: none;
     }
 
-    .navbarlink {
-        display: none;
-    }
-
-    #logonavimg {
-        margin: unset;
-    }
-
-    #logonavimg a {
-        display: flex;
-        margin: unset;
-    }
-
-    header {
-        padding-left: 50px;
-        padding-right: 50px;
+    #mail {
+        order: -1;
     }
 }
 
@@ -469,6 +484,11 @@ footer {
     }
     .col-768-12 {
         width: 100%;
+    }
+
+    .navbarlink {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #opening {
@@ -548,16 +568,6 @@ footer {
     }
     .col-992-12 {
         width: 100%;
-    }
-
-    #navbarlinks {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .navbarlink:hover {
-        text-decoration: underline;
     }
 
     #logonavimg {
