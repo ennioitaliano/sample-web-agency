@@ -1,4 +1,4 @@
-# eTuca-remastered
+# Sample web agency website
 This is another learning-by-doing project, at a more advanced level than [HTMLPortfolio](https://github.com/ennioitaliano/HTMLPortfolio).
 
 With this one I better learned and applied responsiveness and accessibility, other than lots of other minor improvements to my knowledge of HTML/CSS.
